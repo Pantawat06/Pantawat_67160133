@@ -39,7 +39,7 @@
             <div class="mb-3 row">
                 <label for="inputLastname" class="col-sm-2 col-form-label">นามสกุล</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputLastname" name="lastname" placeholder="ระบุตามสกุล">
+                    <input type="text" class="form-control" id="inputLastname" name="lastname" placeholder="ระบุนามสกุล">
                 </div>
             </div>
 
