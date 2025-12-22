@@ -1,15 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MyController;
 
-Route::get('/', function (): View {
-    return view('html-form');
-});
-
-Route::get('/view2', function (): View {
-    return view('myview2');
-});
-
-Route::get('/mycontroller', [App\Http\Controllers\MyController::class, 'index']);
-Route::post('/mycontroller', [App\Http\Controllers\MyController::class, 'process']);
-
+Route::get('/', [MyController::class, 'index'])->name('workshop.index');
+Route::post('/submit', [MyController::class, 'store'])->name('workshop.store');
