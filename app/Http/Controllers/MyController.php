@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\PokedexController;
 use Carbon\Carbon;
 
 class MyController extends Controller
